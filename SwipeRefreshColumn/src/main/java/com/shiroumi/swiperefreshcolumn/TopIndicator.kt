@@ -1,4 +1,4 @@
-package com.example.swiperefreshcolumn
+package com.shiroumi.swiperefreshcolumn
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

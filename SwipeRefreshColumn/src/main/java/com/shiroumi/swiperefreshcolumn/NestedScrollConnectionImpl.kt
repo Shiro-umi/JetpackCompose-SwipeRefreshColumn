@@ -1,4 +1,4 @@
-package com.example.swiperefreshcolumn
+package com.shiroumi.swiperefreshcolumn
 
 import androidx.compose.animation.core.animate
 import androidx.compose.foundation.lazy.LazyListState

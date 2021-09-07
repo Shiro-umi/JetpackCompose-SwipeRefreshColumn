@@ -1,4 +1,4 @@
-package com.example.swiperefreshcolumn
+package com.shiroumi.swiperefreshcolumn
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf

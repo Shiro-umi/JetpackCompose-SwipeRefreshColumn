@@ -1,4 +1,4 @@
-package com.example.swiperefreshcolumn.ui.theme
+package com.shiroumi.swiperefreshcolumn.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
