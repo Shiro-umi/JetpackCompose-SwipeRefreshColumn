@@ -39,8 +39,4 @@ class SwipeRefreshState(
         totalOffset = value
         swipeOffset = value
     }
-
-    fun loadMoreDone() {
-        isLoadingMore = false
-    }
 }

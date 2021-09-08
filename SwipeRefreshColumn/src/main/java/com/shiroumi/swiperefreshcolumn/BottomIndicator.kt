@@ -10,7 +10,7 @@ class BottomIndicator(
     private val _isLoading: MutableState<Boolean> = mutableStateOf(false),
     var hasMore: Boolean = true,
     val indicatorKey: String = DEFAULT_BOTTOM_INDICATOR_KAY,
-    private val composable: @Composable (isLoading: Boolean) -> Unit
+    private val composable: @Composable (isLoading: Boolean, hasMore: Boolean) -> Unit
 ) {
 
     var isLoading: Boolean
@@ -20,5 +20,5 @@ class BottomIndicator(
         }
 
     @Composable
-    internal fun DoCompose() = composable(isLoading)
+    internal fun DoCompose() = composable(isLoading, hasMore)
 }

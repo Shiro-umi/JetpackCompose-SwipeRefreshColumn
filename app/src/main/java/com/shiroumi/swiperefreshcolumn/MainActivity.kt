@@ -34,7 +34,7 @@ class MainActivity : ComponentActivity() {
         setContent {
 
             // example dataList
-            var dataList by remember { mutableStateOf((0..100).toList()) }
+            var dataList by remember { mutableStateOf((1..50).toList()) }
 
             // call 'rememberSwipeRefreshState' to get a swipeRefreshState
             // should provide a 'triggerOffset' here
@@ -43,13 +43,13 @@ class MainActivity : ComponentActivity() {
             )
 
             // initialize a bottomIndicator, if needed
-            val bottomIndicator = BottomIndicator { isLoading ->
+            val bottomIndicator = BottomIndicator { _, hasMore ->
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(32.dp)
                         .background(
-                            if (isLoading) Color.Red else Color.Green
+                            if (hasMore) Color.Red else Color.Green
                         )
                 )
             }
@@ -90,7 +90,6 @@ class MainActivity : ComponentActivity() {
 
             SwipeRefreshColumn(
                 swipeRefreshState = swipeRefreshState,
-                lazyListState = rememberLazyListState(),
                 customBottomIndicator = bottomIndicator,
                 onRefresh = onRefresh,
                 onLoadMore = onLoadMore
