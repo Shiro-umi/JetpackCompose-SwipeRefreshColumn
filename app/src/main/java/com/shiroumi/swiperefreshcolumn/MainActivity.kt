@@ -1,5 +1,6 @@
 package com.shiroumi.swiperefreshcolumn
 
+import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -28,6 +29,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         val handler = Handler(Looper.getMainLooper())
+
+        window.navigationBarColor = Color.parseColor("#cccccc");
 
         setContent {
 
