@@ -4,7 +4,7 @@ A custom LazyColumn supports swipe-down-refresh and load-more action.
 
 # Dependency
 ```gradle
-implementation 'com.shiroumi:swiperefreshcolumn:1.0.0-alpha01'
+implementation 'com.shiroumi:swiperefreshcolumn:1.0.0-alpha02'
 ```
 
 # Usage
@@ -20,12 +20,12 @@ val swipeRefreshState = rememberSwipeRefreshState(
 4. Provide a onRefresh callback, when refresh is done, don't forget to do this:
 ```kotlin
 swipeRefreshState.isRefreshing = false
-bottomIndicator.hasMore = true # or false
+bottomIndicator.hasMore = true // or false
 ```
 5. Provide a onLoadMore callback, when loadMore is done, do the similar thing as Refresh
 ```kotlin
 swipeRefreshState.isLoadingMore = false
-bottomIndicator.hasMore = true # or false
+bottomIndicator.hasMore = true // or false
 ```
 6. Enjoy it
 ```kotlin
@@ -54,3 +54,7 @@ SwipeRefreshColumn(
     }
 }
 ```
+
+
+# 1.0.0-alpha2 Update
+Add Default Indicators (both Top and Bottom) with animation
